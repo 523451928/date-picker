@@ -384,10 +384,10 @@ Datepicker.prototype.renderDate = function () {
                       <div class="pick-tools">
                         <div class="pick-top">
                           <span @click.stop="prevYear" class="prev-year ${this.isChangeYear ? '' : 'hide'}"></span>
-                          <span @click.stop="prev" class="${this.disPrev ? 'pick-prev disabled' : 'pick-prev'}" >&lt;</span >
+                          <span @click.stop="prev" class="${this.disPrev ? 'pick-prev disabled' : 'pick-prev'}" >«</span >
                           <input type="text"  value="${this.year}" @change="changeYear" min = "1970" max = "2100" maxlength = "4" >/
                           ${this.monthString}
-                          <span @click.stop="next" class="${this.disNext ? 'pick-next disabled' : 'pick-next'}" >&gt;</span >
+                          <span @click.stop="next" class="${this.disNext ? 'pick-next disabled' : 'pick-next'}" >»</span >
                           <span class="next-year ${this.isChangeYear ? '' : 'hide'}" @click.stop="nextYear" ></span >
                         </div>
                       </div >
